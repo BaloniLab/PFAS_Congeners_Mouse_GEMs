@@ -1,6 +1,6 @@
 # PFAS_Congeners_Mouse_GEMs  
 
-# Developed by Esraa Gabal, PhD candidate at Baloni lab, HSCI department, Purdue University  
+Developed by Esraa Gabal, PhD candidate at Baloni lab, HSCI department, Purdue University  
 
 **Integration of transcriptomics with GEM iMM1865**:  
 
