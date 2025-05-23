@@ -2,13 +2,15 @@
 
 Developed by Esraa Gabal, PhD candidate at Baloni lab, HSCI department, Purdue University  
 
-**Integration of transcriptomics with GEM iMM1865**:  
+**Integration of transcriptomics with GEM iMM1865**: 
 
-step 1 : Acquire the Entrez gene ID and gene length for the transcriptomics data genes using biomaRt
+**in R:**  
 
-step 2: Map the transcriptomics data against the gene list from iMM1865 model using entrez_id as the shared column ... note to maintain the gene order as that in model
+step 1 : Acquire the Entrez gene ID and gene length for the transcriptomics data genes using biomaRt package in R
 
-step 3: Replace the NA in the datasets (model genes which are not present in the transcriptomics dataste and hence, no gene count for them) by zero and then export the data as csv file  
+step 2: Map the transcriptomics data against the gene list from iMM1865 model using entrez_id as the shared column ... note to maintain the gene order as that in model using the function **left_join() in R**  
+
+step 3: Replace the NA in the datasets (model genes which are not present in the transcriptomics dataste and hence, no gene count for them) by zero through **data[is.na(data)] <- 0** and then export the data as csv file  
 
 **in Matlab : (needs GUROBI solver and Cobratoolbox installation)**  
 
@@ -26,8 +28,8 @@ step 7 : Read the iMAT GEMs models and process with FVA analysis to define the f
 
 step 8 : Read the iMAT GEMs models and process with flux sampling using the OptGPSampler algorithm with 1000 iterations to investigate the flux changes in metabolic reactions in Python    
 
-**metabolic flux visualization**    
-
+**metabolic flux visualization**  
+**in R:**  
 process the outputs of FBA, FVA, and flux sampling which are exported either as .xlsx or .csv format and visulize using **tidyplot** or **ggplot2**  
 
 for FBA output, it was normalized using SIGDA in R as identified in the methods part within the paper 
