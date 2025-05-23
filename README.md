@@ -3,8 +3,8 @@
 
 **Integration of transcriptomics with GEM iMM1865**:
 **in R programming language:**
-step 1 : Acquire the Entrez gene ID and gene length for the transcriptomics data genes using biomaRt in R
-step 2: Map the transcriptomics data against the gene list from iMM1865 model using entrez_id as the shared column ... to maintain the gene order as that in model, use **left_join()** function in R 
+#step 1 : Acquire the Entrez gene ID and gene length for the transcriptomics data genes using biomaRt in R
+#step 2: Map the transcriptomics data against the gene list from iMM1865 model using entrez_id as the shared column ... to maintain the gene order as that in model, use **left_join()** function in R 
 step 3: Replace the NA in the datasets (model genes which are not present in the transcriptomics dataste and hence, no gene count for them) by zero: **data(is.na(data)) <- 0** in R and then export the data as csv file
 
 **in Matlab : (needs GUROBI solver and Cobratoolbox installation)**
