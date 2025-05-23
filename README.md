@@ -14,7 +14,7 @@ step 3: Replace the NA in the datasets (model genes which are not present in the
 
 **in Matlab : (needs GUROBI solver and Cobratoolbox installation)**  
 
-step 4: Either separate the TPM_normalized csv of samples as individual csv files and run the script for iMAT integration OR keep them in one file, and make loop to read through each coulumn and construct an individual GEM of it  
+step 4: Either separate the TPM_normalized csv of samples as individual csv files and run the script for iMAT integration in Matlab  OR keep them in one file, and make loop to read through each coulumn and construct an individual GEM of it    
 
 step 5: Export the indiviudal GEM models as .mat files  
 
@@ -22,11 +22,11 @@ step 5: Export the indiviudal GEM models as .mat files
 
 **in Python: (needs GUROBI solver and CobraPy installation)**  
 
-step 6: Read the iMAT GEMs models and process with FBA analysis to define the flux state while optimizing the objective function ("BIOMASS_reaction")  
+step 6: Read the iMAT GEMs models and process with FBA analysis to define the flux state while optimizing the objective function ("BIOMASS_reaction") in Python    
 
-step 7 : Read the iMAT GEMs models and process with FVA analysis to define the flux distribution of metabolic reactions  
+step 7 : Read the iMAT GEMs models and process with FVA analysis to define the flux distribution of metabolic reactions in Python    
 
-step 8 : Read the iMAT GEMs models and process with flux sampling using the OptGPSampler algorithm with 1000 iterations to investigate the flux changes in metabolic reactions  
+step 8 : Read the iMAT GEMs models and process with flux sampling using the OptGPSampler algorithm with 1000 iterations to investigate the flux changes in metabolic reactions in Python    
 
 **metabolic flux visualization**  
 
