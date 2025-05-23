@@ -4,9 +4,7 @@ Developed by Esraa Gabal, PhD candidate at Baloni lab, HSCI department, Purdue U
 
 **Integration of transcriptomics with GEM iMM1865**:  
 
-**in R programming language:**  
-
-step 1 : Acquire the Entrez gene ID and gene length for the transcriptomics data genes using biomaRt in R  
+step 1 : Acquire the Entrez gene ID and gene length for the transcriptomics data genes using biomaRt
 
 step 2: Map the transcriptomics data against the gene list from iMM1865 model using entrez_id as the shared column ... to maintain the gene order as that in model, use **left_join()** function in R  
 
@@ -14,9 +12,9 @@ step 3: Replace the NA in the datasets (model genes which are not present in the
 
 **in Matlab : (needs GUROBI solver and Cobratoolbox installation)**  
 
-step 4: Either separate the TPM_normalized csv of samples as individual csv files and run the script for iMAT integration in Matlab  OR keep them in one file, and make loop to read through each coulumn and construct an individual GEM of it    
+step 4: Either separate the TPM_normalized csv of samples as individual csv files and run the script for iMAT integration OR keep them in one file, and make loop to read through each coulumn and construct an individual GEM of it in Matlab      
 
-step 5: Export the indiviudal GEM models as .mat files  
+step 5: Export the indiviudal GEM models in Matlab      
 
 **metabolic flux analysis**  
 
