@@ -14,7 +14,7 @@ step 3: Replace the NA in the datasets (model genes which are not present in the
 
 **in Matlab : (needs GUROBI solver and Cobratoolbox installation)**  
 
-step 4: Either separate the TPM_normalized csv f samples as individual csv files and run the script for iMAT integration OR keep them in one file, and make loop to read through each coulumn and construct an individual GEM of it  
+step 4: Either separate the TPM_normalized csv of samples as individual csv files and run the script for iMAT integration OR keep them in one file, and make loop to read through each coulumn and construct an individual GEM of it  
 
 step 5: Export the indiviudal GEM models as .mat files  
 
